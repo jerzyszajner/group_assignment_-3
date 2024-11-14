@@ -11,8 +11,10 @@
   </head>
   <body>
     <main>
+      <!-- Section slideshow -->
       <section class="slideshow">
-        <button class="slideshow__nav slideshow__nav--prev">&larr;</button>
+        <button aria-label="Previous slide" class="slideshow__nav slideshow__nav--prev">&larr;</button>
+        <!-- Slideshow container -->
         <div class="slideshow__container">
           <figure class="slideshow__card">
             <figcaption>Palm tree</figcaption>
@@ -39,8 +41,8 @@
             <img class="slideshow__card-img" src="./assets/images/pexels-ollivves-1433052.jpg" alt="Picture of nature">
           </figure>
         </div>
-        <button class="slideshow__nav slideshow__nav--next">&rarr;</button>
-        
+        <button aria-label="Next slide" class="slideshow__nav slideshow__nav--next">&rarr;</button>
+        <!-- Slideshow bullets -->
         <div class="slideshow__bullets">
           <span class="slideshow__bullet" data-index="0"></span>
           <span class="slideshow__bullet" data-index="1"></span>
@@ -51,10 +53,6 @@
         </div>
       </section>      
     </main>
-
-    <footer>
-      
-    </footer>
     <script src="./js/app.js"></script>
   </body>
 </html>
