@@ -1,9 +1,9 @@
 :root {
     /* Colors */
     --primary-color: #ffffff;
-    --secondary-color: #483248;
-    --bacground-color-nav: rgba(0, 0, 0, 0.5);
-    --bacground-color-nav-active: rgba(50, 165, 32, 0.5);
+    --secondary-color: #d2d2d2;
+    --bacground-color-nav: #00000080;
+    --bacground-color-nav-active: #358036;
 
     /* Spacing */
     --spacing-small: 0.5rem;

@@ -7,9 +7,8 @@ const currentImage = document.querySelector(".image-counter--current");
 let currentIndex = 0;
 
 const imageCounter = () => {
-  currentImage.textContent = currentIndex + 1;
-}
-
+  currentImage.textContent = `${currentIndex +1} / ${slides.length}`;
+};
 
 // Function to hide and show slides
 function updateSlide() {
@@ -18,7 +17,7 @@ function updateSlide() {
     bullets[index].classList.toggle("active", index === currentIndex);
     imageCounter();
   });
-}
+};
 
 // Handling 'Next' button
 nextButton.addEventListener("click", () => {
