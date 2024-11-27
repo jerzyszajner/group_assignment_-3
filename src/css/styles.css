@@ -4,20 +4,15 @@
     font-weight: 400;
 }
 
-@font-face {
-    font-family: Roboto-Bold;
-    src: url(../assets/fonts/Roboto-Bold.ttf);
-    font-weight: 600;
-}
-
 /* Main styles */
 main {
     width: 100%;
     min-height: 100vh;
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular, sans-serif;
     color: var(--primary-color);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* Slideshow styles */
@@ -35,7 +30,6 @@ main {
 
 .slideshow__container {
     display: flex;
-    transition: transform 0.5s ease;
 }
 
 .slideshow__card {
@@ -63,7 +57,6 @@ figcaption {
     padding: var(--spacing-small);
     cursor: pointer;
     height: 10%;
-    font-size: var(--font-size-large);
 }
 
 .slideshow__nav--prev {
@@ -82,8 +75,8 @@ figcaption {
 /* Slideshow bullet */
 .slideshow__bullet {
     display: inline-block;
-    width: var(--spacing-medium);
-    height: var(--spacing-medium);
+    width: var(--spacing-small);
+    height: var(--spacing-small);
     margin: var(--spacing-small);
     background-color: var(--secondary-color);
     border-radius: 50%;
@@ -96,4 +89,10 @@ figcaption {
 
 .hidden {
     display: none;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: var(--spacing-small);
+    }
 }
